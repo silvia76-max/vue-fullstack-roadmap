@@ -27,42 +27,31 @@ export default {
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(18, 61, 40);
-  color: #0f8a4f;
-  font-size: 2em;
+  color: #e0e0e0;  /* Texto claro */
+  font-size: 1rem;  /* Tamaño base normalizado */
   margin: 0;
   padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  }
-  .main-content {
+}
+
+.main-content {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
-  padding-bottom: 50px;
-   }
-
-/* Estilos para pantallas medianas y pequeñas */
-@media (max-width: 1024px) {
-  body {
-    min-height: 180vh;
-  }
-
-  .main-content {
-    min-height: 180vh; 
-  }
+  max-width: 1200px;  /* Ancho máximo */
+  margin: 0 auto;      /* Centrado */
+  padding: 20px;
 }
 
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   body {
-    min-height: 180vh; 
-  }
-
-  .main-content {
-    min-height: 180vh;
+    min-height: 100vh;  /* Altura ajustada */
   }
 }
 </style>
