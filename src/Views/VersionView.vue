@@ -104,7 +104,7 @@ export default {
 }
 @media (max-width: 768px) {
   .tab-content {
-    min-height: 220vh; 
+    min-height: 200vh; 
     gap: 10px;
   }
 }

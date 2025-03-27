@@ -128,6 +128,7 @@ export default {
 .tab-content {
   display: flex;
   flex-wrap: wrap;
+   min-height: 120vh;
   justify-content: center;
 }
 @media (max-width: 768px) {

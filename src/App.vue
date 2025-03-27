@@ -27,8 +27,7 @@ export default {
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(18, 61, 40);
-  color: #e0e0e0;  /* Texto claro */
-  font-size: 1rem;  /* Tamaño base normalizado */
+  font-size: 1.5rem;  
   margin: 0;
   padding: 0;
   text-align: center;
