@@ -1,4 +1,5 @@
 <template>
+ <h1 class="navbar-title">Roadmap Fullstack</h1>
   <div class="navbar">
     <button @click="showTab('Frontend')">Frontend</button>
     <button @click="showTab('Backend')">Backend</button>
@@ -25,15 +26,27 @@ export default {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 20px 0;
-  flex-wrap: nowrap; /* Asegura que los botones no se envuelvan en pantallas grandes */
+  margin: 10px 0;
+  flex-wrap: nowrap; 
+  
 }
-
+.navbar-title {
+  font-size: 2em; 
+  color: rgb(255, 230, 4); 
+  font-weight: bold; 
+  margin-right: 20px;
+   text-shadow: 0 0 5px rgb(111, 235, 109), 0 0 10px rgba(74, 201, 67, 0.96), 0 0 20px rgb(255, 247, 0);
+  animation: brilloNeon 1.5s alternate infinite;
+}
+@keyframes brilloNeon {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
 .navbar button {
-  padding: 10px 20px;
+  padding: 8px 12px;
   font-size: 1em;
   border: none;
-  background: rgb(216, 244, 218);
+  background: rgb(152, 230, 157);
   color: rgb(3, 51, 27);
   cursor: pointer;
   border-radius: 5px;
@@ -42,11 +55,12 @@ export default {
 
 /* Cambiar el color al hacer hover */
 .navbar button:hover {
-  background: rgb(199, 241, 185);
+  background: rgb(121, 161, 107);
+  color:gold;
 }
 
 /* Media Query para pantallas pequeñas (tabletas y móviles) */
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
   .navbar {
     flex-direction: column; 
     align-items: center;     
@@ -55,7 +69,7 @@ export default {
   }
 
   .navbar button {
-    width: 90%; 
+    width: 80%; 
     margin-bottom: 10px; 
     font-size: 0.9em;    
    }

@@ -34,13 +34,18 @@ export default {
 </script>
 
 <style scoped>
+.tab-content {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
 .flip-card {
   background-color: transparent;
   width: 200px;
   height: 250px;
   perspective: 1000px;
   margin:20px;
-  margin-bottom: 20px;
 }
 
 /* Media query para pantallas pequeñas */
@@ -128,11 +133,11 @@ export default {
   font-size: 50px;
   margin-bottom: 10px;
 }
-
 .icon {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
+  width: 100%;
+  max-width: 120px;
+  height: auto; 
   object-fit: contain;
+  margin-bottom: 10px;
 }
 </style>
